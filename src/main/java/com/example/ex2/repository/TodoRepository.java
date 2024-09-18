@@ -15,7 +15,7 @@ public interface TodoRepository extends JpaRepository<TodoEntity, Long>, TodoSea
     @Query("select t from TodoEntity t ")
     Page<TodoEntity> listAll(Pageable pageable);
 
-    @Query("select t from TodoEntity t whrere t.mno = :mno")
+    @Query("select t from TodoEntity t where t.mno = :mno")
     Optional<TodoDTO> getDTO(@Param("mno") Long mno);
 
 }

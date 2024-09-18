@@ -46,6 +46,10 @@ dependencies {
             "jakarta.annotation:jakarta.annotation-api",
             "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"
     )
+
+    //validation
+    implementation "org.springframework.boot:spring-boot-starter-validation"
+
 }
 
 tasks.named('test') {
