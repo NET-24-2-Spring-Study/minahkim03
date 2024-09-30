@@ -30,6 +30,11 @@ public class JWTCheckFilter extends OncePerRequestFilter {
         if (request.getServletPath().startsWith("/api/v1/token/")) {
             return true;
         }
+
+        String path = request.getRequestURI();
+        if(!path.startsWith("/api/")) {
+            return true;
+        }
         return false;
     }
 

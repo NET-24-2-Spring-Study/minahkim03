@@ -1,4 +1,4 @@
-package com.example.ex3.config.sample.controller;
+package com.example.ex3.sample.controller;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.ResponseEntity;
